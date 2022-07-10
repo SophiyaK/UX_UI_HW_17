@@ -1,0 +1,126 @@
+body {
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+    background-color: #F6F0DE;
+}
+
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+  }
+  #homeIcon {
+    color: #9f6544;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: x-large;
+  }
+  #navigation {
+    color: #9f6544;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 800;
+  }
+  #uxHeading {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+    color: #9f6544;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    height: 70vh;
+    grid-template-rows: auto 500px 500px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "nameS project2"
+    "project1 project2"
+    "project3 project4"
+    "project3 empty"
+    ;
+  }
+  #nameS {
+    grid-area: nameS;
+    color: #9f6544;
+    justify-content: end;
+  }
+  #project2 {
+    grid-area: project2;
+    background-image: url("../images/p2.jpg");
+  }
+  #project1 {
+    grid-area: project1;
+    background-image: url("../images/p1.jpg");
+  }
+  #project3 {
+    grid-area: project3;
+    background-image: url("../images/p3.jpg");
+  }
+  #project4 {
+    grid-area: project4;
+    background-image: url("../images/p4.jpg");
+  }
+  #empty {
+      grid-area: empty;
+      background-color: #ffffff;
+      
+  }
+  #footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+  }
+  .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+  } 
+  .heading {
+    padding: 15px;
+    height: min-content;
+    color: white;
+    font-size: 20px;
+    background-color: #000000;
+    opacity: 80%;
+    font-weight: 800;
+  } 
+  #insta {
+    color: #5F7264;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+  #linkedin {
+    color: #5F7264;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+  #twitter {
+    color: #5F7264;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+
+  
