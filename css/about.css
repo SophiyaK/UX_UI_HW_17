@@ -1,0 +1,105 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #F6F0DE;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+h2 {
+    color: #5F7264;
+}
+
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+  }
+  #homeIcon {
+    color: #9f6544;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: x-large;
+  }
+  #navigation {
+    color: #9f6544;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 800;
+  }
+  #introGrid {
+    margin: 0px 5%;
+    display: grid;
+    height: auto;
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+    grid-template-rows: 700px 400px ;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas:
+    "intro blob" 
+    "knowMore knowMore"
+    ;
+  }
+  #intro {
+    color: #9f6544;
+    margin: 20px;
+    padding-left: 60px;
+  }
+  #knowMore {
+    color: #9f6544;
+    margin: 20px;
+    padding-left: 60px;
+  }
+  #blob {
+    margin: 20px;
+  }
+  #blobShape {
+      height: 30vh;
+      position: absolute;
+      left: 60%;
+  }
+  #footer {
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  #insta {
+    color: #5F7264;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+  #linkedin {
+    color: #5F7264;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+  #twitter {
+    color: #5F7264;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }

@@ -4,6 +4,11 @@ body {
     background-color: #F6F0DE;
 }
 
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
   #navBar {
     display: flex;
     flex-direction: row;
@@ -36,13 +41,17 @@ body {
     color: #9f6544;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 40px;
   }
   #heroGrid {
     margin: 0px 5%;
     display: grid;
-    height: 70vh;
-    grid-template-rows: auto 500px 500px 100px;
-    grid-template-columns: 1fr 1fr;
+    height: auto;
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+    grid-template-rows: 100px 500px 500px 100px;
+    grid-template-columns: 0.5fr 0.5fr;
     grid-template-areas:
     "nameS project2"
     "project1 project2"
@@ -54,22 +63,27 @@ body {
     grid-area: nameS;
     color: #9f6544;
     justify-content: end;
+    align-items: center;
   }
   #project2 {
     grid-area: project2;
     background-image: url("../images/p2.jpg");
+    display: block;
   }
   #project1 {
     grid-area: project1;
     background-image: url("../images/p1.jpg");
+    display: block;
   }
   #project3 {
     grid-area: project3;
     background-image: url("../images/p3.jpg");
+    display: block;
   }
   #project4 {
     grid-area: project4;
     background-image: url("../images/p4.jpg");
+    display: block;
   }
   #empty {
       grid-area: empty;
@@ -78,16 +92,22 @@ body {
   }
   #footer {
     display: flex;
-    flex-direction: row;
-    margin: 0px 5%;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   .categoryGridArea {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 5px;
+    margin: 12px;
     cursor: pointer;
     display: grid;
+    position: relative;
+    z-index: 1;
   } 
   .heading {
     padding: 15px;
@@ -98,10 +118,27 @@ body {
     opacity: 80%;
     font-weight: 800;
   } 
+  .icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  i{
+    display: inline-flex;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    opacity: 80%;
+    color: white;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+  }
   #insta {
     color: #5F7264;
     display: flex;
-    width: 50%;
     align-items: center;
     justify-content: center;
     font-size: x-large;
@@ -109,7 +146,6 @@ body {
   #linkedin {
     color: #5F7264;
     display: flex;
-    width: 50%;
     align-items: center;
     justify-content: center;
     font-size: x-large;
@@ -117,7 +153,6 @@ body {
   #twitter {
     color: #5F7264;
     display: flex;
-    width: 50%;
     align-items: center;
     justify-content: center;
     font-size: x-large;
